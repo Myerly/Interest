@@ -1,0 +1,52 @@
+==========================================================================
+Program to calculate future value of a savings account
+==========================================================================
+BEGIN
+	//Algorithm: Future Value (FV) = P * (1 + r/n)^n*t
+	//
+	// WHERE:
+	//
+	// P = Principle (initial amount deposited)
+	// r = Annual Interest Rate (between 0 and 1)
+	// n = Number of compounding periods per year
+	// t = time (in years) until money withdrawn
+	//
+	// Program Purpose : To find the future value in a savings account
+	// based on the above information
+	
+	Output "This program will compute Future Value of an amoun invested in a checking account "
+	Output "for a given number of years at a given fixed interest rate and a given number of "
+	Output "compounding periods per year"
+
+	// Get Principle
+	Output "Please enter the initial amount invested in dollars           : "
+	Input P
+
+	// Get Annual Inerest Rate
+	Output "Please enter the annual intereset rate in percentage (0-100)  : "
+	Input r
+
+	//Convert percent interest to number between 0 and 1
+	r = r /100
+
+	// Get Number of compounding periods per year
+	Output "Please enter the Number of compounding periods per year       : "
+	Input n
+
+	// Get Number of years before money is withdrawn
+	Output "Please enter the Number of years before money is withdrawn    : "
+	Input t
+
+	//Compute Future Value based on equation stated above in Algorithm
+	FV = P * (1 + r/n)^n*t
+
+	// Display Future Value to user
+	Output "Future Value is												  : ", FV
+
+
+	Output "Thank you for using he program"
+
+END
+
+
+
